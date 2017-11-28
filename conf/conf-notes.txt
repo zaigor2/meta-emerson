@@ -1,0 +1,24 @@
+Available MACHINEs settings are:
+    MACHINE="at91sam9260ek"		(default)
+    MACHINE="ipro4"
+
+Available SDK MACHINEs settings are:
+    SDKMACHINE="i686"
+    SDKMACHINE="x86_64"			(default)
+
+Available targets are:
+    emerson-core-image-minimal
+    emerson-wireless-image-minimal
+
+Common commands are:
+    # Single images
+    MACHINE="ipro4" bitbake emerson-core-image-minimal
+    MACHINE="ipro4" bitbake emerson-wireless-image-minimal
+
+    # Clean all
+    MACHINE="ipro4" bitbake -c cleanall emerson-core-image-minimal
+    MACHINE="ipro4" bitbake -c cleanall emerson-wireless-image-minimal
+
+    # Generate SDK
+    MACHINE="ipro4" SDKMACHINE="i686" bitbake -c populate_sdk emerson-wireless-image-minimal
+    MACHINE="ipro4" SDKMACHINE="x86_64" bitbake -c populate_sdk emerson-wireless-image-minimal
