@@ -9,14 +9,16 @@ IMAGE_INSTALL += "\
     mpack \
     \
     iptables \
+    ppp \
+    msmtp \
+    net-snmp \
     \
     libsodium \
     \
-    nginx \
+    lighttpd \
     curl \
     \
     lua \
 "
-### lighttpd
 
 inherit core-image
