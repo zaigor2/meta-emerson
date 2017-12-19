@@ -5,10 +5,12 @@ IMAGE_INSTALL += "\
     u-boot-fw-utils \
     mtd-utils mtd-utils-ubifs \
     coreutils \
+    can-utils \
     \
     mpack \
     \
     iptables \
+    iproute2 \
     ppp \
     msmtp \
     net-snmp \
@@ -19,6 +21,8 @@ IMAGE_INSTALL += "\
     curl \
     \
     lua \
+    can-utils \
+    iproute2 \
 "
 
 inherit core-image
