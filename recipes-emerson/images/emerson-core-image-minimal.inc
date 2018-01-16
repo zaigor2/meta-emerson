@@ -22,6 +22,7 @@ IMAGE_INSTALL += "\
     \
     lua \
     can-utils \
+    i2c-tools \
     iproute2 \
 "
 
