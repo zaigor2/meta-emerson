@@ -7,6 +7,7 @@ IMAGE_INSTALL += "\
     coreutils \
     can-utils \
     \
+    unzip \
     mpack \
     \
     iptables \
