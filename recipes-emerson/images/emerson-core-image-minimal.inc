@@ -1,5 +1,7 @@
 IMAGE_FEATURES += "ssh-server-openssh package-management"
 
+PREFERRED_VERSION_gnupg = "2.%"
+
 IMAGE_INSTALL += "\
     packagegroup-core-boot \
     u-boot-fw-utils \
@@ -9,6 +11,7 @@ IMAGE_INSTALL += "\
     \
     unzip \
     mpack \
+    gnupg \
     \
     iptables \
     iproute2 \
