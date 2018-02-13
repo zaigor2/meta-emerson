@@ -8,6 +8,7 @@ IMAGE_INSTALL += "\
     mtd-utils mtd-utils-ubifs \
     coreutils \
     can-utils \
+    strace \
     \
     unzip \
     mpack \
