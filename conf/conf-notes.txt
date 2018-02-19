@@ -6,11 +6,22 @@ Available SDK MACHINEs settings are:
     SDKMACHINE="i686"
     SDKMACHINE="x86_64"			(default)
 
-Available targets are:
+Useful package targets are:
+    gdb
+    strace
+
+Available image targets are:
     emerson-core-image-minimal
     emerson-wireless-image-minimal
 
 Common commands are:
+    # Single packages
+    MACHINE="ipro4" bitbake gdb
+    MACHINE="ipro4" bitbake strace
+
+    # Clean package
+    MACHINE="ipro4" bitbake -c cleanall gdb
+
     # Single images
     MACHINE="ipro4" bitbake emerson-core-image-minimal
     MACHINE="ipro4" bitbake emerson-wireless-image-minimal
