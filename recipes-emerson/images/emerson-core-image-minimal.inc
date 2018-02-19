@@ -16,6 +16,7 @@ IMAGE_INSTALL += "\
     \
     iptables \
     iproute2 \
+    iputils \
     ppp \
     msmtp \
     net-snmp \
